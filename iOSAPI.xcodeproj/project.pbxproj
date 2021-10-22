@@ -14,9 +14,16 @@
 		CE7577C927223A7100B3D372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7577C827223A7100B3D372 /* Assets.xcassets */; };
 		CE7577CC27223A7100B3D372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7577CA27223A7100B3D372 /* LaunchScreen.storyboard */; };
 		CE7577CF27223A7100B3D372 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7577CE27223A7100B3D372 /* main.m */; };
+		CE75782D2722A57000B3D372 /* UIImageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE75782C2722A57000B3D372 /* UIImageViewVC.m */; };
+		CE7578322722A74B00B3D372 /* UIImageView_normal_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE75782F2722A74B00B3D372 /* UIImageView_normal_image@3x.png */; };
+		CE7578332722A74B00B3D372 /* UIImageView_normal_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7578302722A74B00B3D372 /* UIImageView_normal_image@2x.png */; };
+		CE7578342722A74B00B3D372 /* UIImageView_dynamic_image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE7578312722A74B00B3D372 /* UIImageView_dynamic_image.gif */; };
+		F38B49C4410ECD5475D6675A /* Pods_iOSAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56177D2CABBBBD2B7CF4620B /* Pods_iOSAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3850D776BE63D4BDEF651F57 /* Pods-iOSAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAPI.release.xcconfig"; path = "Target Support Files/Pods-iOSAPI/Pods-iOSAPI.release.xcconfig"; sourceTree = "<group>"; };
+		56177D2CABBBBD2B7CF4620B /* Pods_iOSAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7577B927223A7100B3D372 /* iOSAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7577BC27223A7100B3D372 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE7577BD27223A7100B3D372 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +36,12 @@
 		CE7577CB27223A7100B3D372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7577CD27223A7100B3D372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7577CE27223A7100B3D372 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE75782B2722A57000B3D372 /* UIImageViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewVC.h; sourceTree = "<group>"; };
+		CE75782C2722A57000B3D372 /* UIImageViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewVC.m; sourceTree = "<group>"; };
+		CE75782F2722A74B00B3D372 /* UIImageView_normal_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIImageView_normal_image@3x.png"; sourceTree = "<group>"; };
+		CE7578302722A74B00B3D372 /* UIImageView_normal_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIImageView_normal_image@2x.png"; sourceTree = "<group>"; };
+		CE7578312722A74B00B3D372 /* UIImageView_dynamic_image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = UIImageView_dynamic_image.gif; sourceTree = "<group>"; };
+		FE3D5CB1057A7F59711405F0 /* Pods-iOSAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAPI.debug.xcconfig"; path = "Target Support Files/Pods-iOSAPI/Pods-iOSAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38B49C4410ECD5475D6675A /* Pods_iOSAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B98B8B1A65C6470A079677DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56177D2CABBBBD2B7CF4620B /* Pods_iOSAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C91E22EEBBD847DDD3B502D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE3D5CB1057A7F59711405F0 /* Pods-iOSAPI.debug.xcconfig */,
+				3850D776BE63D4BDEF651F57 /* Pods-iOSAPI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE7577B027223A7100B3D372 = {
 			isa = PBXGroup;
 			children = (
 				CE7577BB27223A7100B3D372 /* iOSAPI */,
 				CE7577BA27223A7100B3D372 /* Products */,
+				C91E22EEBBD847DDD3B502D1 /* Pods */,
+				B98B8B1A65C6470A079677DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +101,9 @@
 				CE7577C027223A7100B3D372 /* SceneDelegate.m */,
 				CE7577C227223A7100B3D372 /* ViewController.h */,
 				CE7577C327223A7100B3D372 /* ViewController.m */,
+				CE75782B2722A57000B3D372 /* UIImageViewVC.h */,
+				CE75782C2722A57000B3D372 /* UIImageViewVC.m */,
+				CE75782E2722A6A800B3D372 /* Resources */,
 				CE7577C527223A7100B3D372 /* Main.storyboard */,
 				CE7577C827223A7100B3D372 /* Assets.xcassets */,
 				CE7577CA27223A7100B3D372 /* LaunchScreen.storyboard */,
@@ -76,6 +113,16 @@
 			path = iOSAPI;
 			sourceTree = "<group>";
 		};
+		CE75782E2722A6A800B3D372 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE7578312722A74B00B3D372 /* UIImageView_dynamic_image.gif */,
+				CE7578302722A74B00B3D372 /* UIImageView_normal_image@2x.png */,
+				CE75782F2722A74B00B3D372 /* UIImageView_normal_image@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE7577D227223A7100B3D372 /* Build configuration list for PBXNativeTarget "iOSAPI" */;
 			buildPhases = (
+				2782FF1A414EA5A0427B7F28 /* [CP] Check Pods Manifest.lock */,
 				CE7577B527223A7100B3D372 /* Sources */,
 				CE7577B627223A7100B3D372 /* Frameworks */,
 				CE7577B727223A7100B3D372 /* Resources */,
+				3F30B67F997A79F6429A3354 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +183,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7577CC27223A7100B3D372 /* LaunchScreen.storyboard in Resources */,
+				CE7578342722A74B00B3D372 /* UIImageView_dynamic_image.gif in Resources */,
 				CE7577C927223A7100B3D372 /* Assets.xcassets in Resources */,
+				CE7578332722A74B00B3D372 /* UIImageView_normal_image@2x.png in Resources */,
 				CE7577C727223A7100B3D372 /* Main.storyboard in Resources */,
+				CE7578322722A74B00B3D372 /* UIImageView_normal_image@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2782FF1A414EA5A0427B7F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F30B67F997A79F6429A3354 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAPI/Pods-iOSAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSAPI/Pods-iOSAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSAPI/Pods-iOSAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE7577B527223A7100B3D372 /* Sources */ = {
@@ -147,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7577C427223A7100B3D372 /* ViewController.m in Sources */,
+				CE75782D2722A57000B3D372 /* UIImageViewVC.m in Sources */,
 				CE7577BE27223A7100B3D372 /* AppDelegate.m in Sources */,
 				CE7577CF27223A7100B3D372 /* main.m in Sources */,
 				CE7577C127223A7100B3D372 /* SceneDelegate.m in Sources */,
@@ -289,6 +384,7 @@
 		};
 		CE7577D327223A7100B3D372 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3D5CB1057A7F59711405F0 /* Pods-iOSAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +412,7 @@
 		};
 		CE7577D427223A7100B3D372 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3850D776BE63D4BDEF651F57 /* Pods-iOSAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
