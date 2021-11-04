@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         
         setupData()
         setupUI()
-
     }
     
     private func setupData() {
@@ -47,7 +46,7 @@ class ViewController: UIViewController {
 //        mtv.separatorColor = .white
         mtv.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell_id")
 //        mtv.allowsSelection = false
-        mtv.allowsMultipleSelection = true
+//        mtv.allowsMultipleSelection = true
         view.addSubview(mtv)
     }
 
@@ -62,10 +61,20 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell_id", for: indexPath)
 //        cell.selectionStyle = .none
         cell.textLabel?.text = String(describing: type(of: datas[indexPath.row]))
+        
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(tapCell))
+//        cell.addGestureRecognizer(tap)
+        
         return cell
     }
     
+//    @objc func tapCell() {
+//        self.navigationController?.pushViewController(datas[1], animated: true)
+//    }
+    
 }
+
+
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

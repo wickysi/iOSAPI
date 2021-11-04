@@ -411,22 +411,26 @@ open class UICollectionView : UIScrollView, UIDataSourceTranslating {
 
     open func register(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String)
 
-    
+    //MARK: - Cell复用
     open func dequeueReusableCell(withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell
 
     open func dequeueReusableSupplementaryView(ofKind elementKind: String, withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionReusableView
 
-    
+    //MARK: - 控制Cell选择
     // These properties control whether items can be selected, and if so, whether multiple items can be simultaneously selected.
+    
+    // 是否允许选择cell。设置为No，cell无法被选择，代理选择cell的方法不会回调。但仍然可以给cell添加手势和点击事件。
     open var allowsSelection: Bool // default is YES
 
+    // 是否允许同时选择多个cell。如果允许，当你点击多个cell时，它们都将是选择状态。
     open var allowsMultipleSelection: Bool // default is NO
 
-    
     open var indexPathsForSelectedItems: [IndexPath]? { get } // returns nil or an array of selected index paths
 
+    // 代码选择cell
     open func selectItem(at indexPath: IndexPath?, animated: Bool, scrollPosition: UICollectionView.ScrollPosition)
-
+    
+    // 代码取消选择cell
     open func deselectItem(at indexPath: IndexPath, animated: Bool)
 
     
